@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int suma;
+
+   for(int i=0;i<101;i++){
+        if(i%2==1){
+            suma = suma + i;
+            cout << suma << endl;
+        }
+    }
+
+    system("PAUSE");
+    return 0;
+}
