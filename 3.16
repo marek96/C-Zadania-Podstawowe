@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+    int max,min;
+    float suma=0;
+    short int n = 5;
+
+   for(int i=0;i<n;i++){
+        int liczba =(rand()%100)+0;
+        cout << liczba << " ";
+        if(liczba<min){
+            min = liczba;
+        }
+        if(liczba>=max){
+            max = liczba;
+        }
+        suma = suma + liczba;
+        if(i==n-1){
+            cout << endl;
+            cout << "Srednia: " <<  suma / n << endl;
+        }
+    }
+    cout << endl;
+
+    cout << "Max: " << max << endl;
+    cout << "Min: " << min << endl;
+
+
+    system("PAUSE");
+    return 0;
+}
