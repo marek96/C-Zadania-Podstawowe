@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int suma = 0, i=0;
+
+    do{
+        if(i%2==0){
+            suma = suma + i;
+            cout << suma << endl;
+        }
+        i++;
+    }while(i<101);
+
+    system("PAUSE");
+    return 0;
+}
