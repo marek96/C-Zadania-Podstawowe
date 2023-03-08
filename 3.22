@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    //srand(time(NULL));
+
+    for(char litera='A';litera<='Z';litera++){
+        cout.width(2);
+        cout << litera;
+    }
+    cout << endl;
+    for(char litera='z';litera>='a';litera--){
+        cout.width(2);
+        cout << litera;
+    }
+    cout << endl;
+
+    system("PAUSE");
+    return 0;
+}
