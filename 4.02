@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    //srand(time(NULL));
+    int tab[10];
+
+    for(int i=9;i>=0;i--){
+        tab[i] = i;
+        cout.width(2);
+        cout << tab[i];
+    }
+
+
+    cout << endl;
+
+    system("PAUSE");
+    return 0;
+}
