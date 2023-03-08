@@ -1,0 +1,58 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    //srand(time(NULL));
+    int i=0,j;
+
+   do{
+    j=0;
+    do{
+        if(j==0){
+            if(i==0){
+                cout.width(1);
+                cout <<"[";
+                cout.width(2);
+                cout <<"X";
+                cout.width(1);
+                cout <<"]";
+            }
+            if(i>0){
+                cout.width(1);
+                cout <<"[";
+                cout.width(2);
+                cout << i;
+                cout.width(1);
+                cout <<"]";
+            }
+        }
+        if(i==0 && j>0){
+            //cout.width(4);
+            if(j<11){
+                cout.width(1);
+                cout <<"[";
+                cout.width(2);
+                cout << j;
+                cout.width(1);
+                cout <<"]";
+            }
+        }
+        else{
+            if(j!=0){
+                cout.width(4);
+                cout << internal << i*j;
+            }
+        }
+        j++;
+    }while(j<11);
+    cout << endl;
+    i++;
+   }while(i<11);
+
+    system("PAUSE");
+    return 0;
+}
