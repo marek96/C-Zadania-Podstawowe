@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+    int max,min;
+    short int n,i=0;
+    float suma=0;
+    cout << "Wprowadz ilosc liczb do wylosowania - ";
+    cin >> n;
+
+
+   do{
+        int liczba =(rand()%100)+0;
+        cout << liczba << " ";
+        if(i==0){
+            min = liczba;
+            max = liczba;
+        }
+        if(liczba<min){
+            min = liczba;
+        }
+        if(liczba>=max){
+            max = liczba;
+        }
+        suma = suma + liczba;
+        if(i==n-1){
+            cout << endl;
+            cout << "Srednia: " <<  suma / n << endl;
+        }
+        i++;
+    }while(i<n);
+    cout << endl;
+
+    cout << "Max: " << max << endl;
+    cout << "Min: " << min << endl;
+
+
+    system("PAUSE");
+    return 0;
+}
