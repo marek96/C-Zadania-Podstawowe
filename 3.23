@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    //srand(time(NULL));
+    char litera='A';
+
+    do{
+        cout.width(2);
+        cout << litera;
+        litera++;
+    }while(litera<='Z');
+    cout << endl;
+
+    do{
+        cout.width(2);
+        cout << litera;
+        litera--;
+    }while(litera>='A');
+    cout << endl;
+
+    system("PAUSE");
+    return 0;
+}
