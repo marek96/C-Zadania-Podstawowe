@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+
+using namespace std;
+float a,b,pole;
+
+void pole_pr()
+{
+    cout << "Wprowadz bok a: ";
+    cin >> a;
+    cout << "Wprowadz bok b: ";
+    cin >> b;
+
+    pole = a * b;
+    cout << "Pole prostokata wynosi: " << pole << endl;
+}
+
+int main()
+{
+    pole_pr();
+    system("PAUSE");
+    return 0;
+}
