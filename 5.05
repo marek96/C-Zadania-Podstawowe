@@ -1,0 +1,57 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+float czytaj(){
+    float zmienna;
+    cout << "Wprowadz zmienna: ";
+    cin >> zmienna;
+    return zmienna;
+}
+
+float przetworz(float a,float b,float c)
+{
+    float delta;
+    short int liczba_pierwiastkow;
+
+    delta = ((b*b)-(4*a*c));
+    cout << delta << endl;
+
+    if(delta<0){
+        liczba_pierwiastkow = 0;
+    }
+    if(delta==0){
+        liczba_pierwiastkow = 1;
+    }
+    else{
+        liczba_pierwiastkow = 2;
+    }
+    switch(liczba_pierwiastkow){
+        case 0: cout << "Brak rozwiazan";
+    }
+
+    return delta;
+}
+
+void wyswietl(float pole){
+    cout << "Pole prostokata wynosi: " << setprecision(4) <<pole << endl;
+}
+int main()
+{
+
+    float a,b,c,x1,x2,delta;
+    short int liczba_pierwiastkow;
+
+    a = czytaj();
+    b = czytaj();
+    c = czytaj();
+
+    delta = przetworz(a,b,c);
+
+
+}
+
