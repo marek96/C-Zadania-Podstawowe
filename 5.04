@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+float czytaj(){
+    float bok;
+    cout << "Wprowadz bok: ";
+        cin >> bok;
+    return bok;
+}
+
+float przetworz(float a,float b)
+{
+    float pole;
+
+    pole = a * b;
+
+    return pole;
+}
+
+void wyswietl(float pole){
+    cout << "Pole prostokata wynosi: " << setprecision(4) <<pole << endl;
+}
+int main()
+{
+    wyswietl(przetworz(czytaj(),czytaj()));
+    system("PAUSE");
+    return 0;
+}
