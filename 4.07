@@ -1,0 +1,47 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+    int tab[10][10];
+    int suma0,suma1;
+
+
+    for(int i=0;i<10;i++){
+        for(int j=0;j<10;j++){
+
+            if(j==0){
+                tab[i][j]=i;
+                suma0=suma0+i;
+            }
+
+            if(j==1){
+                tab[i][j]=i*i;
+                suma1=suma1+tab[i][j];
+            }
+
+            else{
+                tab[i][j]=0;
+            }
+
+            cout.width(3);
+            cout<<tab[i][j];
+
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+    cout << "Suma w 1 kolumnie: "<< suma0 << endl;
+    cout << endl;
+    cout << "Suma w 2 kolumnie: "<< suma1 << endl;
+    cout << endl;
+
+    system("PAUSE");
+    return 0;
+}
